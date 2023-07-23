@@ -8,7 +8,7 @@
 
 <body>
   <header>
-    <h1>Profile</h1>
+    <h1>Hi, Aderinsola!</h1>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -20,6 +20,7 @@
 
   <main>
     <div class="tabby">
+   
       <div class="tabs">
         <button class="tab is-selected" data-target="home" data-theme="home">
           Home
@@ -28,8 +29,8 @@
           Upcoming
         </button>
 
-      </div>
-
+ 
+    </div>
       <div class="tab-contents">
         <section class="tab-content is-selected" id="home" data-theme="home">
           <section class="hero-home-1">
@@ -37,34 +38,43 @@
             <p>Do you have any inquiry about your meals? You can simply tap to call us.</p>
           </section>
 
-          <section class="hero">
 
-            <h2>Food Delivery</h2>
-            <div class="wrap">
-              <button id="homeButton" class="cta-button jsModalButton">View Status</button>
-
+          <section class="hero1">
+            <div class="flex-container">
+              <div class="flex-item-left"><h2>Food Delivery<span> <img src="assets/food-icon.svg" alt="smile-star-icon"></span></h2></div>
+              <div class="flex-item-right">  <button id="homeButton" class="food-cta-button jsModalButton">View Status<span> <img src="assets/Arrow.svg" alt="smile-star-icon"></span></button></div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item-left"><span> <img src="assets/Food Image.svg" alt="smile-star-icon"></span></div>
+              <div class="flex-item-right"> <span>French Fries with</span><p>BBQ Turkey Wings & Coleslaw</p></div>
+            </div>
+            <hr class="border">
+            <div class="flex-container">
+              <div class="flex-item-left"><span> <img src="assets/time.svg" alt="smile-star-icon"></span></div>
+              <div class="flex-item-right">  10:00 AM - 11:30 AM</div>
+            </div>
+          </section>
+          <section class="hero2">
+            <div class="flex-container">
+              <div class="flex-item-left"><h2>Home Cleaning<span> <img src="assets/home-icon.svg" alt="smile-star-icon"></span></h2></div>
+              <div class="flex-item-right">  <button id="homeButton" class="home-cta-button jsModalButton2">View Status<span> <img src="assets/Arrow1.svg" alt="smile-star-icon"></span></button></div>
+            </div>
+            <div class="flex-container">
+            <div class="hero2-text">Get ready; our cleaner is coming to get your house pampered.</div>
+            </div>
+            <hr class="border2">
+            <div class="flex-container">
+              <div class="flex-item-left"><span> <img src="assets/time.svg" alt="smile-star-icon"></span></div>
+              <div class="flex-item-right">  10:00 AM - 11:30 AM</div>
             </div>
           </section>
 
-          <section class="hero">
-
-            <h2>Home Cleaning</h2>
-            <div class="wrap">
-              <button id="homeButton" class="cta-button jsModalButton">View Status</button>
-
-            </div>
-          </section>
-
+          
         </section>
 
         <section class="tab-content" id="upcoming" data-theme="upcoming">
-
           <h2>Upcoming</h2>
-
-
         </section>
-
-
       </div>
     </div>
 
@@ -81,6 +91,18 @@
       </div>
     </div>
   </div>
+
+  <div class="modal-overlay jsModalOverlay">
+    <div class="modal">
+      <div class="modal__content">
+     ok
+        <button class="modal__close-button jsModalClose2">
+        ok
+        </button>
+      </div>
+    </div>
+  </div>
+ 
 
   <footer>
 

@@ -43,3 +43,14 @@ modalCloseButton.addEventListener('click', _ => {
 })
 
 
+const modalButton2 = document.querySelector('.jsModalButton2')
+const modalCloseButton2 = document.querySelector('.jsModalClose2')
+
+modalButton2.addEventListener('click', _ => {
+  document.body.classList.add('modal-is-open')
+})
+
+modalCloseButton2.addEventListener('click', _ => {
+  document.body.classList.remove('modal-is-open')
+})
+
