@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Profile</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="tabby">
+      <div class="tabs">
+        <button class="tab is-selected" data-target="home" data-theme="home">
+          Home
+        </button>
+        <button class="tab" data-target="upcoming" data-theme="upcoming">
+          Upcoming
+        </button>
+
+      </div>
+
+      <div class="tab-contents">
+        <section class="tab-content is-selected" id="home" data-theme="home">
+          <section class="hero-home-1">
+            <h2>Tap here to call us</h2>
+            <p>Do you have any inquiry about your meals? You can simply tap to call us.</p>
+          </section>
+
+          <section class="hero">
+
+            <h2>Food Delivery</h2>
+            <div class="wrap">
+              <button id="homeButton" class="cta-button jsModalButton">View Status</button>
+
+            </div>
+          </section>
+
+          <section class="hero">
+
+            <h2>Home Cleaning</h2>
+            <div class="wrap">
+              <button id="homeButton" class="cta-button jsModalButton">View Status</button>
+
+            </div>
+          </section>
+
+        </section>
+
+        <section class="tab-content" id="upcoming" data-theme="upcoming">
+
+          <h2>Upcoming</h2>
+
+
+        </section>
+
+
+      </div>
+    </div>
+
+  </main>
+  <!-- modal -->
+
+  <div class="modal-overlay jsModalOverlay">
+    <div class="modal">
+      <div class="modal__content">
+     ok
+        <button class="modal__close-button jsModalClose">
+        ok
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+
+    <nav>
+      <ul>
+        <li>
+          <div class="footer-svg-container">
+            <img src="assets/Home.svg" alt="smile-star-icon">
+          </div><a href="#">Home</a>
+        </li>
+        <li>
+          <div class="footer-svg-container">
+            <img src="assets/History.svg" alt="smile-star-icon">
+          </div><a href="#">History</a>
+        </li>
+        <li>
+          <div class="footer-svg-container">
+            <img src="assets/Notification Bell.svg" alt="smile-star-icon">
+          </div><a href="#">Notifications</a>
+        </li>
+        <li>
+          <div class="footer-svg-container">
+            <img src="assets/Message - Chat.svg" alt="smile-star-icon">
+          </div><a href="#">Gardener</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
