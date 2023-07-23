@@ -33,7 +33,7 @@ body {
   }
 .hero .svg-container {
     width: 300px;
-    height: 120px;
+    /* height: 120px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
