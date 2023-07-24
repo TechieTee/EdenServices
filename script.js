@@ -1,5 +1,5 @@
-// Function to change button color
-  function changeColor() {
+// Function to change button color and navigate to home page
+  function navigateToHome() {
     document.getElementById("homeButton").style.backgroundColor = "#2E8B57";
     setTimeout(function() {
       document.getElementById("homeButton").style.backgroundColor = "#03A84E";
@@ -7,7 +7,14 @@
     window.location.href = "home.html";
   }
   
-
+// Function to navigate to index page
+function navigateToIndex() {
+  document.getElementById("indexButton").style.backgroundColor = "#2E8B57";
+  setTimeout(function() {
+    document.getElementById("indexButton").style.backgroundColor = "#03A84E";
+  }, 300);
+  window.location.href = "index.html";
+}
 
 // tab function
 const tabby = document.querySelector('.tabby')
