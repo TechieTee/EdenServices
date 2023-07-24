@@ -1,27 +1,169 @@
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eden Services</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <title>index</title>
+  <link rel="stylesheet" href="css/index.css">
 </head>
-
-<body>
-
-    <div class="container">
-    <div class="svg-container">
-        <img src="assets/smile-star-icon.svg" alt="smile-star-icon">
+  <body>
+    <div class="main">
+      <div class="header">
+        <span><img src="assets/arrow-back.svg" alt="4"
+            /></span>
+        <span class="header-text-section"><h1 class="header-text">Review your plan</h1></span>
       </div>
-    <h2>Your Eden profile has been completed, Aderinsola!</h2>
-    <p>You’re one step closer to starting your easy life with Eden.</p>
-  
-        <button id="homeButton" class="cta-button" onclick="navigateToHome()">Go Home</button>
-  </div>
+
+      <div class="progress-bar-wrapper">
+        <div class="steps">
+          <span class="steps-item"><img src="assets/check.svg" alt="4" /></span>
+          <span class="steps-item">2</span>
+          <span class="steps-item-unchecked">3</span>
+          <span class="steps-item-unchecked"><img src="assets/🍏.svg" alt="4"/></span>
+          <div class="progress-line">
+            <span class="indicator"></span>
+          </div>
+        </div>
+        <div class="steps-desc">
+          <span>Sign Up</span>
+          <span class="customize">Customize</span>
+          <span>Pay</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="info">
+          <h1>Review your plan</h1>
+          <p>
+            Here's a summary of your Eden life. Let me tell you, your life is
+            about to become waayyy easier.
+          </p>
+        </div>
+
+        <div class="plan-details">
+          <span class="plan-left">Your Plan Details</span>
+          <span class="plan-right">Add or Remove Services</span>
+       
+          
+        </div>
+        <div class="straight-line"></div>
+        <div class="card-list">
+          <section class="card card1">
+            <div class="card-details">
+              <div class="card-desc">
+                <img src="assets/food.svg" alt="food" />
+                <span class="desc-item">Food</span>
+              </div>
+              <div class="card-desc">
+                <span class="desc-item-details"> Expand details </span>
+                <span><img src="assets/arrow-down.svg" alt="" /></span>
+              </div>
+            </div>
+            <p class="card-price">₦27,000</p>
+          </section>
+          <section class="card card2">
+            <div class="card-details">
+              <div class="card-desc">
+                <img src="assets/laundry.svg" alt="food" />
+                <span class="desc-item">Laundry</span>
+              </div>
+              <div class="card-desc">
+                <span class="desc-item-details"> Expand details </span>
+                <span><img src="assets/arrow-down.svg" alt="" /></span>
+              </div>
+            </div>
+            <p class="card-price">₦27,000</p>
+          </section>
+          <section class="card card3">
+            <div class="card-details">
+              <div class="card-desc">
+                <img src="assets/cleaning.svg" alt="food" />
+                <span class="desc-item">Cleaning</span>
+              </div>
+              <div class="card-desc">
+                <span class="desc-item-details"> Expand details </span>
+                <span><img src="assets/arrow-down.svg" alt="" /></span>
+              </div>
+            </div>
+            <p class="card-price">₦27,000</p>
+          </section>
+          <section class="card card4">
+            <div class="card-details">
+              <div class="card-desc">
+                <img src="assets/beauty.svg" alt="food" />
+                <span class="desc-item">Beauty</span>
+              </div>
+              <div class="card-desc">
+                <span class="desc-item-details"> Expand details </span>
+                <span><img src="assets/arrow-down.svg" alt="" /></span>
+              </div>
+            </div>
+            <p class="card-price">₦27,000</p>
+          </section>
+        </div>
+
+        <div class="straight-line2"></div>
+
+        <div class="plan-details total">
+          <span class="plan-left">Start date</span>
+          <span class="plan-right">Choose your start date</span>
+        </div>
+        <div class="date-warning">
+          <img src="assets/warning-info.svg" alt="error" />
+          <p>Choose your start date to pay.</p>
+        </div>
+
+        <div class="straight-line2"></div>
+
+        <div class="discount">
+          <h2>Discount Code</h2>
+          <div class="discount-form">
+            <input type="text" value="247LOVE4U" class="discount-input" />
+            <button class="discount-button">Remove code</button>
+          </div>
+          <p>Code successfully applied.</p>
+        </div>
+
+        <div class="straight-line2"></div>
+
+        <section class="total">
+          <div class="plan-details">
+            <span class="plan-left">Subtotal</span>
+            <span class="plan-right dark">₦112,000.00</span>
+          </div>
+          <div class="plan-details">
+            <span class="plan-left">Discount applied (25% off)</span>
+            <span class="plan-right">- ₦28,000</span>
+          </div>
+          <div class="plan-details">
+            <h1 class="plan-left">Total</h1>
+            <h1 class="plan-right dark bold">₦102,000.00</h1>
+          </div>
+          <div class="plan-details">
+            <span class="plan-left"></span>
+            <span class="plan-right dark"
+              >This amount covers your subscription for the next 4 weeks.</span>
+          </div>
+        </section>
+
+        <section class="sub-details">
+          <img src="assets/info.svg" alt="info" />
+          <p>
+            Your subscription amount for subsequent months will be ₦112,000.
+          </p>
+        </section>
+      </div>
+      <section class="footer">
+        <button   id="indexButton" onclick="navigateToIndex()" class="footer-button">View Laundry Frequency</button>
+      </section>
+      <section class="footer">
+        <p class="footer-text">
+          Not what you want?
+          <span style="color: #03a84e; text-decoration: underline"
+            >Customise your plan.</span
+          >
+        </p>
+      </section>
+    </div>
     <script src="script.js"></script>
-    <script src="./confetti.js"></script>
-
-</body>
-
+  </body>
 </html>
