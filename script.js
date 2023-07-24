@@ -7,13 +7,13 @@
     window.location.href = "home.html";
   }
   
-// Function to navigate to index page
-function navigateToIndex() {
+// Function to navigate to profileCompleted page
+function navigateToProfileCompletedx() {
   document.getElementById("indexButton").style.backgroundColor = "#2E8B57";
   setTimeout(function() {
     document.getElementById("indexButton").style.backgroundColor = "#03A84E";
   }, 300);
-  window.location.href = "index.html";
+  window.location.href = "profileCompleted.html";
 }
 
 // tab function
