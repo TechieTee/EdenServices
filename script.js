@@ -8,7 +8,7 @@
   }
   
 // Function to navigate to profileCompleted page
-function navigateToProfileCompletedx() {
+function navigateToProfileCompleted() {
   document.getElementById("indexButton").style.backgroundColor = "#2E8B57";
   setTimeout(function() {
     document.getElementById("indexButton").style.backgroundColor = "#03A84E";
@@ -35,7 +35,6 @@ tabs.forEach(tab => {
     tabContent.classList.add('is-selected')
   })
 })
-
 
 // modal
 const modalButton = document.querySelector('.jsModalButton')
