@@ -384,3 +384,12 @@ width: 100%;
 .footer-button:active {
   background-color: #3e8e41;
 }
+
+/* Media Query for button Responsiveness */
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer-button {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+}
+

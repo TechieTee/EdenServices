@@ -122,8 +122,8 @@ li {
 .home-cta-button:active {
     background-color: #3e8e41;
 }
-/* Media Query for Responsiveness */
-@media (max-width: 768px) {
+/* Media Query for button Responsiveness */
+@media (min-width: 768px) and (max-width: 1024px) {
     cta-button {
         padding: 10px 20px;
         font-size: 14px;
@@ -400,7 +400,7 @@ body.modal-is-open .modal-overlay {
     flex: 50%;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .flex-container {
         flex-direction: row;
     }

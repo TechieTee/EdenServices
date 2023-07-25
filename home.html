@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Home</title>
   <link rel="stylesheet" href="css/home.css">
 </head>
-
 <body>
-  <header>
-    <h1>Hi, Aderinsola!</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- header -->
+  <header class="header">
+    <div class="icon-menu">
+      <img
+      src="./assets/hamburger.svg"
+      alt="hamburger"
+    />
+
+      <h2>Hi, Modupe!</h2>
+    </div>
+    <div class="avatar-icon">
+      <img
+        src="./assets/avatar.svg  "
+        alt="avartar"
+      />
+    </div>
   </header>
 
-  <main>
+  <main class="main">
     <div class="tabby">
-   
+   <!-- tab header -->
       <div class="tabs">
         <button class="tab is-selected" data-target="home" data-theme="home">
           Home
@@ -28,48 +33,55 @@
         <button class="tab" data-target="upcoming" data-theme="upcoming">
           Upcoming
         </button>
-
- 
     </div>
+    <!-- tab content -->
       <div class="tab-contents">
         <section class="tab-content is-selected" id="home" data-theme="home">
-          <section class="hero-home-1">
+          <section class="inquiry">
             <h2>Tap here to call us</h2>
             <p>Do you have any inquiry about your meals? You can simply tap to call us.</p>
           </section>
-
-
-          <section class="hero1">
-            <div class="flex-container">
-              <div class="flex-item-left"><h2>Food Delivery<span> <img src="assets/food-icon.svg" alt="smile-star-icon"></span></h2></div>
-              <div class="flex-item-right">  <button id="homeButton" class="food-cta-button jsModalButton">View Status<span> <img src="assets/Arrow.svg" alt="smile-star-icon"></span></button></div>
+          <div class="flex-container">
+            <div class="flex-item-left">
+              <div class="card-details">
+                <div class="card-desc">
+                    <span class="card-desc-text" style="color: #03a84e;">Food Delivery</span>
+                  <img src="./assets/food.svg" alt="food" />
+                </div>
+                <button id="homeButton" class="food-cta-button jsModalButton">View Status <span><img src="./assets/Arrow.svg" alt="" /></span></button>
+              </div>
+              <div class="card-details-body info">
+                <img src="./assets/Food Image.svg" alt="food-image" class="food-image">
+                <div class="food-info">
+                  <h2>French Fries with</h2>
+                  <p>BBQ Turkey Wings & Coleslaw</p>
+                </div>
+              </div>
+              <div class="straight-line"></div>
+              <div class="info">
+                <img src="./assets/time.svg" alt="time">
+                <p class="time">10:00 AM - 11:30 AM</p>
+              </div>
             </div>
-            <div class="flex-container">
-              <div class="flex-item-left"><span> <img src="assets/Food Image.svg" alt="smile-star-icon"></span></div>
-              <div class="flex-item-right"> <span>French Fries with</span><p>BBQ Turkey Wings & Coleslaw</p></div>
+            <div class="flex-item-right">
+              <div class="card-details">
+                <div class="card-desc">
+                    <span class="card-desc-text" style="color: #FF9D00;">Home Cleaning</span>
+                  <img src="./assets/cleaning.svg" alt="food" />
+                </div>
+              
+                <button id="homeButton" class="home-cta-button jsModalButton2">View Status <span><img src="./assets/Arrow1.svg" alt="" /></span></button>
+             
+              </div>
+              <p class="cleaning-details-body info">Get ready; our cleaner is coming to get your house pampered.</p>
+              <div class="straight-line2"></div>
+              <div class="info">
+                <img src="./assets/time.svg" alt="time">
+                <p class="time">10:00 AM - 11:30 AM</p>
+              </div>
             </div>
-            <hr class="border">
-            <div class="flex-container">
-              <div class="flex-item-left"><span> <img src="assets/time.svg" alt="smile-star-icon"></span></div>
-              <div class="flex-item-right">  10:00 AM - 11:30 AM</div>
-            </div>
-          </section>
-          <section class="hero2">
-            <div class="flex-container">
-              <div class="flex-item-left"><h2>Home Cleaning<span> <img src="assets/home-icon.svg" alt="smile-star-icon"></span></h2></div>
-              <div class="flex-item-right">  <button id="homeButton" class="home-cta-button jsModalButton2">View Status<span> <img src="assets/Arrow1.svg" alt="smile-star-icon"></span></button></div>
-            </div>
-            <div class="flex-container">
-            <div class="hero2-text">Get ready; our cleaner is coming to get your house pampered.</div>
-            </div>
-            <hr class="border2">
-            <div class="flex-container">
-              <div class="flex-item-left"><span> <img src="assets/time.svg" alt="smile-star-icon"></span></div>
-              <div class="flex-item-right">  10:00 AM - 11:30 AM</div>
-            </div>
-          </section>
-
-          
+          </div>
+   
         </section>
 
         <section class="tab-content" id="upcoming" data-theme="upcoming">
@@ -77,9 +89,9 @@
         </section>
       </div>
     </div>
-
   </main>
-  <!-- modal -->
+
+  <!-- modal food delivery -->
 
   <div class="modal-overlay jsModalOverlay">
     <div class="modal">
@@ -92,6 +104,7 @@
     </div>
   </div>
 
+    <!-- modal home cleaning -->
   <div class="modal-overlay jsModalOverlay">
     <div class="modal">
       <div class="modal__content">
@@ -103,6 +116,7 @@
     </div>
   </div>
  
+<!-- footer -->
 
   <footer>
 
