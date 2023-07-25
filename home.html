@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Home</title>
   <link rel="stylesheet" href="css/home.css">
 </head>
+
 <body>
   <!-- header -->
   <header class="header">
     <div class="icon-menu">
-      <img
-      src="./assets/hamburger.svg"
-      alt="hamburger"
-    />
+      <img src="./assets/hamburger.svg" alt="hamburger" />
 
-   <a href="index.html" style="text-decoration:none;"> <h2>Hi, Modupe!</h2></a>
+      <a href="index.html" style="text-decoration:none;">
+        <h2>Hi, Modupe!</h2>
+      </a>
     </div>
     <div class="avatar-icon">
-      <img
-        src="./assets/avatar.svg  "
-        alt="avartar"
-      />
+      <img src="./assets/avatar.svg  " alt="avartar" />
     </div>
   </header>
 
   <main class="main">
     <div class="tabby">
-   <!-- tab header -->
+      <!-- tab header -->
       <div class="tabs">
         <button class="tab is-selected" data-target="home" data-theme="home">
           Home
@@ -33,8 +31,8 @@
         <button class="tab" data-target="upcoming" data-theme="upcoming">
           Upcoming
         </button>
-    </div>
-    <!-- tab content -->
+      </div>
+      <!-- tab content -->
       <div class="tab-contents">
         <section class="tab-content is-selected" id="home" data-theme="home">
           <section class="inquiry">
@@ -45,10 +43,11 @@
             <div class="flex-item-left">
               <div class="card-details">
                 <div class="card-desc">
-                    <span class="card-desc-text" style="color: #03a84e;">Food Delivery</span>
+                  <span class="card-desc-text" style="color: #03a84e;">Food Delivery</span>
                   <img src="./assets/food.svg" alt="food" />
                 </div>
                 <button id="homeButton" class="food-cta-button jsModalButton">View Status <span><img src="./assets/Arrow.svg" alt="" /></span></button>
+            
               </div>
               <div class="card-details-body info">
                 <img src="./assets/Food Image.svg" alt="food-image" class="food-image">
@@ -66,12 +65,13 @@
             <div class="flex-item-right">
               <div class="card-details">
                 <div class="card-desc">
-                    <span class="card-desc-text" style="color: #FF9D00;">Home Cleaning</span>
+                  <span class="card-desc-text" style="color: #FF9D00;">Home Cleaning</span>
                   <img src="./assets/cleaning.svg" alt="food" />
                 </div>
-              
-                <button id="homeButton" class="home-cta-button jsModalButton2">View Status <span><img src="./assets/Arrow1.svg" alt="" /></span></button>
-             
+
+                <button id="homeButton" class="home-cta-button jsModalButton">View Status <span><img
+                      src="./assets/Arrow1.svg" alt="" /></span></button>
+
               </div>
               <p class="cleaning-details-body info">Get ready; our cleaner is coming to get your house pampered.</p>
               <div class="straight-line2"></div>
@@ -81,7 +81,7 @@
               </div>
             </div>
           </div>
-   
+
         </section>
 
         <section class="tab-content" id="upcoming" data-theme="upcoming">
@@ -92,31 +92,117 @@
   </main>
 
   <!-- modal food delivery -->
-
-  <div class="modal-overlay jsModalOverlay">
+<div class="modal-overlay jsModalOverlay">
     <div class="modal">
-      <div class="modal__content">
+      <div class="modal-content">
         <button class="modal__close-button jsModalClose">
        <img src="./assets/Remove-Cancel.svg" alt="cancel">
         </button>
-        food delivery modal content
+            <p class="modal-date">Mon, 08 Sep 2021</p>
+            <div class="food-item">
+              <img src="./Assets/food.svg" alt="order" class="order-img" />
+              <div class="food-info order-info">
+                <h2>Order Status</h2>
+                <h3>Order has arrived</h3>
+              </div>
+            </div>
+            <div class="address-details food-info">
+              <h2 style="margin-bottom: 0.4rem">Delivery Address</h2>
+              <p>No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.</p>
+            </div>
+            <div>
+              <ul class="orderProgress">
+                <li class="orderProgress-item current">
+                  <section class="order-item">
+                    <div class="order-details">
+                      <h3>Order has arrived</h3>
+                      <p>10:56 AM</p>
+                    </div>
+                    <p>Your order has arrived at your location. Pick it up!</p>
+                  </section>
+                </li>
+                <li class="orderProgress-item is-done">
+                  <section class="order-item">
+                    <div class="order-details">
+                      <h3>Order on the way</h3>
+                      <p>9:14 AM</p>
+                    </div>
+                    <p>Your order has been dispatched and is on the way to you.</p>
+                  </section>
+                </li>
+              </ul>
+            </div>
       </div>
     </div>
   </div>
 
-    <!-- modal home cleaning -->
-  <div class="modal-overlay jsModalOverlay">
+  <!-- modal home cleaning -->
+  <!-- <div class="modal-overlay jsModalOverlay">
     <div class="modal">
-      <div class="modal__content">
-     <button class="modal__close-button jsModalClose2">
-      <img src="./assets/Remove-Cancel.svg" alt="cancel">
-       </button>
-       home cleaning modal content
+      <div class="modal-content">
+        <button class="modal__close-button jsModalClose">
+          <img src="./assets/Remove-Cancel.svg" alt="cancel">
+        </button>
+        <p class="modal-date">Mon, 08 Sep 2021</p>
+        <div class="food-item">
+          <img src="./assets/cleaning.svg" alt="order" class="order-img" />
+          <div class="food-info order-info">
+            <h2>Order Status</h2>
+            <h3>Cleaning Completed</h3>
+          </div>
+        </div>
+        <div class="address-details cleaning-info">
+          <h2 style="margin-bottom: 0.4rem">Cleaning Address</h2>
+          <p>No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.</p>
+          <h2 style="margin-bottom: 0.4rem">Cleaner</h2>
+          <p>Kelechi Oguike</p>
+        </div>
+        <div>
+          <ul class="orderProgress">
+            <li class="orderProgress is-done">
+              <section class="order-item">
+                <div class="order-details">
+                  <h3>Cleaning Completed</h3>
+                  <p>10:00 AM</p>
+                </div>
+                <p style="color:  #03A84E;">Give feedback</p>
+              </section>
+            </li>
+
+            <li class="orderProgress-item is-done">
+              <section class="order-item">
+                <div class="order-details">
+                  <h3>Cleaning Started</h3>
+                  <p>5:20 AM</p>
+                </div>
+                <p >Your cleaner has started cleaning</p>
+              </section>
+            </li>
+            <li class="orderProgress-item is-done">
+              <section class="order-item">
+                <div class="order-details">
+                  <h3>Cleaner has arrived</h3>
+                  <p>5:00 AM</p>
+                </div>
+                <p >Your cleaner has arrived your location</p>
+              </section>
+            </li>
+            <li class="orderProgress-item is-done">
+              <section class="order-item">
+                <div class="order-details">
+                  <h3>Cleaner en route</h3>
+                  <p>4:01 AM</p>
+                </div>
+                <p >Your cleaner is on the way to your location!</p>
+              </section>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
- 
-<!-- footer -->
+  </div> -->
+
+  <!-- footer -->
 
   <footer>
 
