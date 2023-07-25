@@ -35,8 +35,9 @@ li {
     line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
+    color: #0F241B;
 }
-
+.icon-menu h2:hover {color: #03A84E;}
 
 .menu-toggle {
     display: flex;
