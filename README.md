@@ -1,4 +1,4 @@
 # EdenServices
-Demo [Boas](https://eden-services.netlify.app/)
+[Demo](https://eden-services.netlify.app/)
 
 
